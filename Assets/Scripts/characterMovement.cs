@@ -71,11 +71,13 @@ public class characterMovement : MonoBehaviour
             currentSide = currentSide * -1;
         }
 
+        /*
         if (Input.GetButtonDown("Jump") && canJump)
         {
             rb.AddForce(new Vector2(0, jumpForce / Time.fixedDeltaTime));
             canJump = false; 
         }
+        */
     }
     private void CheckGround()
     {
@@ -180,17 +182,18 @@ public class characterMovement : MonoBehaviour
         }
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
+    /*private void OnCollisionStay2D(Collision2D collision)
     {
-        for (int i = 0; i < collision.contactCount; i++) { 
+        for (int i = 0; i < collision.contactCount; i++)
+        { 
         
             Debug.Log("contacted with normal " + collision.GetContact(i).normal + " Dot is " + Math.Abs(Vector2.Dot(collision.GetContact(i).normal, (Vector2)transform.up)));
             if (Math.Abs(Vector2.Dot(collision.GetContact(i).normal, (Vector2)transform.up)) > 0.9)
             {
             canJump = true;
             }
-         }
-    }
+        }
+    }*/
     
 
 
