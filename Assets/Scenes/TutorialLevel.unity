@@ -860,6 +860,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainCharacter
       objectReference: {fileID: 0}
+    - target: {fileID: 8386742657149966096, guid: a58825d6cdbb54241a0c0f4b3cb00c34,
+        type: 3}
+      propertyPath: jumpUpAmount
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8386742657149966096, guid: a58825d6cdbb54241a0c0f4b3cb00c34,
+        type: 3}
+      propertyPath: jumpDownAmount
+      value: 0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a58825d6cdbb54241a0c0f4b3cb00c34, type: 3}
 --- !u!1001 &2046524664
