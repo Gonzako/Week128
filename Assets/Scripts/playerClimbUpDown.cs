@@ -21,7 +21,7 @@ public class playerClimbUpDown : MonoBehaviour
     #endregion
 
     #region Private Fields
-    [SerializeField] float jumpUpAmount = 2f, jumpDownAmount = 2f;
+    [SerializeField] float jumpUpAmount = 2f, jumpDownAmount = 0.1f;
     [SerializeField] float timeToJump = 0.4f;
     private Tween jumpingTween;
     Collider2D col;
@@ -40,7 +40,7 @@ public class playerClimbUpDown : MonoBehaviour
         obj.timeToWait = timeToJump + 0.05f;
 
 
-        Vector2 endPos = obj.hit.collider.transform.position + new Vector3(0, obj.hit.collider.bounds.extents.y + col.bounds.extents.y);
+        Vector2 endPos = (Vector2)Vector2Int.FloorToInt(obj.hit.point) + Vector2.one/2 + new Vector2(0, col.bounds.extents.y);
 
         jumpingTween = rb.DOJump(endPos, jumpDownAmount, 1, timeToJump);
 
@@ -48,12 +48,14 @@ public class playerClimbUpDown : MonoBehaviour
 
     private void handleJump(onSoftEdgeArgs obj)
     {
+        Debug.Log("Tried to jump");
         if (obj.hit.distance > 0)
         {
             obj.willDoSomething = true;
             obj.timeToWait = timeToJump + 0.05f;
 
-            Vector2 endPos = obj.hit.collider.transform.position + new Vector3(0, obj.hit.collider.bounds.extents.y + col.bounds.extents.y);
+            Vector2 endPos = Vector2Int.FloorToInt(obj.hit.point) + new Vector2(0, col.bounds.extents.y);
+
 
             jumpingTween = rb.DOJump(endPos, jumpUpAmount, 1, timeToJump);
 
@@ -62,7 +64,8 @@ public class playerClimbUpDown : MonoBehaviour
 
     #endregion
     
-#if false
+#if true
+
     #region Unity API
 
     void Awake()
