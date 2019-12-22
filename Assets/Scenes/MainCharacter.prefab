@@ -106,8 +106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4df90b26b04524d87c8a33dbc78f0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpUpAmount: 2
-  jumpDownAmount: 2
+  jumpUpAmount: 0.2
+  jumpDownAmount: 0.1
   timeToJump: 0.4
 --- !u!95 &1560916966
 Animator:
