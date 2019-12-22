@@ -27,6 +27,7 @@ public class characterMovement : MonoBehaviour
 
     #region Private Fields
     [SerializeField] private float jumpForce = 10;
+    [SerializeField] private Animator animator;
     Collider2D col;
     Rigidbody2D rb;
     SpriteRenderer characterRenderer;
@@ -63,16 +64,19 @@ public class characterMovement : MonoBehaviour
             if (Input.GetAxisRaw("Horizontal") != 0 && canMoveForward)
             {
                 rb.velocity = new Vector2 (speed * currentSide, rb.velocity.y);
+                animator.SetBool(0, true);
             }
             else
             {
                 rb.velocity = new Vector2(0, rb.velocity.y);
+                animator.SetBool(0, false);
             }
         }
         else
         {
             characterRenderer.flipX = !characterRenderer.flipX;
             currentSide = currentSide * -1;
+            
         }
 
         /*
@@ -92,7 +96,10 @@ public class characterMovement : MonoBehaviour
         if (hit)
         {
 #if UNITY_EDITOR
-            Debug.DrawRay(transform.position + (col.bounds.extents.x *forwardRaycastMultiplier + col.offset.x ) * currentSide * transform.right + transform.up*col.bounds.extents.y, -transform.up * hit.distance, Color.red);
+            Debug.DrawRay(transform.position + 
+                (col.bounds.extents.x *forwardRaycastMultiplier + col.offset.x ) * currentSide * transform.right
+                + transform.up*col.bounds.extents.y,
+                -transform.up * hit.distance, Color.red);
             Debug.Log(hit.collider.gameObject.name);
             Debug.Log(hit.distance);
 #endif
@@ -171,6 +178,7 @@ public class characterMovement : MonoBehaviour
      
     void Awake()
     {
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
         characterRenderer = GetComponentInChildren<SpriteRenderer>();

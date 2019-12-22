@@ -73,6 +73,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   jumpForce: 5
+  animator: {fileID: 0}
   speed: 5
   maxFallDown: 2
   maxDistance: 20
