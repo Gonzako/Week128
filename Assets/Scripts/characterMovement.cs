@@ -85,7 +85,6 @@ public class characterMovement : MonoBehaviour
     }
     private void CheckGround()
     {
-        int side = characterRenderer.flipX ? -1 : 1;
         var hit = Physics2D.Raycast(new Vector2(transform.position.x + currentSide * (col.bounds.extents.x * forwardRaycastMultiplier + col.offset.x),
                                     transform.position.y + col.bounds.extents.y), -transform.up, maxDistance, groundLayer);
 
