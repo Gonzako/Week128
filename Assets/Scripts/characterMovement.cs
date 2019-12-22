@@ -60,9 +60,13 @@ public class characterMovement : MonoBehaviour
          */
         if (Input.GetAxisRaw("Horizontal") * currentSide >= 0)
         {
-            if (Input.GetAxisRaw("Horizontal") != 0)
+            if (Input.GetAxisRaw("Horizontal") != 0 && canMoveForward)
             {
                 rb.velocity = new Vector2 (speed * currentSide, rb.velocity.y);
+            }
+            else
+            {
+                rb.velocity = new Vector2(0, rb.velocity.y);
             }
         }
         else

@@ -40,7 +40,7 @@ public class playerClimbUpDown : MonoBehaviour
         obj.timeToWait = timeToJump + 0.05f;
 
 
-        Vector2 endPos = (Vector2)Vector2Int.FloorToInt(obj.hit.point) + Vector2.one/2 + new Vector2(0, col.bounds.extents.y);
+        Vector2 endPos = (Vector2)Vector2Int.FloorToInt(obj.hit.point) + Vector2.right/2  + new Vector2(0, col.bounds.extents.y);
 
         jumpingTween = rb.DOJump(endPos, jumpDownAmount, 0, timeToJump);
 
@@ -54,7 +54,7 @@ public class playerClimbUpDown : MonoBehaviour
             obj.willDoSomething = true;
             obj.timeToWait = timeToJump + 0.05f;
 
-            Vector2 endPos = Vector2Int.FloorToInt(obj.hit.point) + new Vector2(0, col.bounds.extents.y);
+            Vector2 endPos = (Vector2)Vector2Int.FloorToInt(obj.hit.point) + Vector2.right/2 + new Vector2(0, col.bounds.extents.y);
 
 
             jumpingTween = rb.DOJump(endPos, jumpUpAmount, 0, timeToJump);
