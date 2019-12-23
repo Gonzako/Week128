@@ -19,6 +19,7 @@ public class characterMovement : MonoBehaviour, IFixedBaseMovement
     public event Action<onSoftEdgeArgs> onFallableEdge;
     public event Action<onHardEdgeArgs> onCliff;
     public event Action<onSoftEdgeArgs> onWallHit;
+    public event Action onCamoStart;
     public event Action onCamoHold; //gets called every frame
     public event Action onCamoFinish;
     #endregion
@@ -90,6 +91,8 @@ public class characterMovement : MonoBehaviour, IFixedBaseMovement
         }
         else
         {
+            if (!onCamo)
+                onCamoStart?.Invoke();
 
             onCamoHold?.Invoke();
             onCamo = true;
@@ -116,8 +119,6 @@ public class characterMovement : MonoBehaviour, IFixedBaseMovement
                 (col.bounds.extents.x *forwardRaycastMultiplier + col.offset.x ) * currentSide * transform.right
                 + transform.up*col.bounds.extents.y,
                 -transform.up * hit.distance, Color.red);
-
-
 #endif
 
             if (hit.distance > col.bounds.size.y + raycastDownLeeway)
