@@ -314,7 +314,7 @@ PrefabInstance:
     - target: {fileID: 2768092126996845761, guid: a58825d6cdbb54241a0c0f4b3cb00c34,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2768092126996845761, guid: a58825d6cdbb54241a0c0f4b3cb00c34,
         type: 3}
@@ -951,8 +951,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 691063279}
+  - {fileID: 1501921372}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1501921370
 GameObject:
@@ -1027,12 +1028,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1501921370}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.45, y: -0.68, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.00015562773, y: 2.5497525, z: -90}
   m_LocalScale: {x: 1, y: 1.5625, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 910139088}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1703737236
 GameObject:
@@ -1107,7 +1108,7 @@ Transform:
   m_LocalScale: {x: 1, y: 5.797969, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1840527826
 MonoBehaviour:
@@ -1136,7 +1137,7 @@ MonoBehaviour:
   manualDebugFloorRoof: 0
   showSearchTree: 0
   unwalkableNodeDebugSize: 0.3
-  logPathResults: 1
+  logPathResults: 0
   maxNearestNodeDistance: 100
   scanOnStartup: 1
   fullGetNearestSearch: 0
@@ -1245,7 +1246,6 @@ GameObject:
   - component: {fileID: 2007413631}
   - component: {fileID: 2007413630}
   - component: {fileID: 2007413632}
-  - component: {fileID: 2007413633}
   m_Layer: 0
   m_Name: SimpleEnemy
   m_TagString: Untagged
@@ -1265,7 +1265,7 @@ Transform:
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &2007413627
 Rigidbody2D:
@@ -1323,7 +1323,7 @@ MonoBehaviour:
   speed: 1
   maxFallDown: 3
   maxDistance: 5
-  forwardRaycastMultiplier: 1.3
+  forwardRaycastMultiplier: 2
   raycastDownLeeway: 0.2
 --- !u!114 &2007413630
 MonoBehaviour:
@@ -1417,18 +1417,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2007413633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2007413625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f4df90b26b04524d87c8a33dbc78f0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpUpAmount: 2
-  jumpDownAmount: 2
-  timeToJump: 5

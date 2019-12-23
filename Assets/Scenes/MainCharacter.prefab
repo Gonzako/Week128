@@ -71,7 +71,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groundLayer:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 512
   jumpForce: 5
   animator: {fileID: 0}
   speed: 5
