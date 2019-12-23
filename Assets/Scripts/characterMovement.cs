@@ -6,10 +6,8 @@
  */
 
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
- 
+
 
 [RequireComponent(typeof(Collider2D))]
 public class characterMovement : MonoBehaviour, IFixedBaseMovement
@@ -21,6 +19,8 @@ public class characterMovement : MonoBehaviour, IFixedBaseMovement
     public event Action<onSoftEdgeArgs> onFallableEdge;
     public event Action<onHardEdgeArgs> onCliff;
     public event Action<onSoftEdgeArgs> onWallHit;
+    public event Action onCamoHold; //gets called every frame
+    public event Action onCamoFinish;
     #endregion
 
     #endregion
@@ -41,6 +41,7 @@ public class characterMovement : MonoBehaviour, IFixedBaseMovement
     onSoftEdgeArgs fallableArgs = new onSoftEdgeArgs() { willDoSomething = false};
     onHardEdgeArgs cliffArgs = new onHardEdgeArgs() { willDoSomething = false};
     bool canJump = true;
+    bool onCamo = false;
     bool canMoveForward = true;
     float disabledTime;
     int currentSide = 1;
@@ -59,24 +60,39 @@ public class characterMovement : MonoBehaviour, IFixedBaseMovement
         -1 right
          
          */
-        if (Input.GetAxisRaw("Horizontal") * currentSide >= 0)
+        if (!Input.GetButton("Jump"))
         {
-            if (Input.GetAxisRaw("Horizontal") != 0 && canMoveForward)
+            if (Input.GetAxisRaw("Horizontal") * currentSide >= 0)
             {
-                rb.velocity = new Vector2 (speed * currentSide, rb.velocity.y);
-                animator.SetBool("Walking", true);
+                if (Input.GetAxisRaw("Horizontal") != 0 && canMoveForward)
+                {
+                    rb.velocity = new Vector2(speed * currentSide, rb.velocity.y);
+                    animator.SetBool("Walking", true);
+                }
+                else
+                {
+                    rb.velocity = new Vector2(0, rb.velocity.y);
+                    animator.SetBool("Walking", false);
+                }
+
             }
             else
             {
-                rb.velocity = new Vector2(0, rb.velocity.y);
-                animator.SetBool("Walking", false);
+                characterRenderer.flipX = !characterRenderer.flipX;
+                currentSide = currentSide * -1;
+
+            }
+            if (onCamo)
+            {
+                onCamo = false;
+                onCamoFinish?.Invoke();
             }
         }
         else
         {
-            characterRenderer.flipX = !characterRenderer.flipX;
-            currentSide = currentSide * -1;
-            
+
+            onCamoHold?.Invoke();
+            onCamo = true;
         }
 
         /*
