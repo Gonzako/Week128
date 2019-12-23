@@ -12,15 +12,15 @@ using UnityEngine;
  
 
 [RequireComponent(typeof(Collider2D))]
-public class characterMovement : MonoBehaviour
+public class characterMovement : MonoBehaviour, IFixedBaseMovement
 {
     #region Public Fields
     public LayerMask groundLayer;
 
     #region Events
-    public static event Action<onSoftEdgeArgs> onFallableEdge;
-    public static event Action<onHardEdgeArgs> onCliff;
-    public static event Action<onSoftEdgeArgs> onWallHit;
+    public event Action<onSoftEdgeArgs> onFallableEdge;
+    public event Action<onHardEdgeArgs> onCliff;
+    public event Action<onSoftEdgeArgs> onWallHit;
     #endregion
 
     #endregion
@@ -64,12 +64,12 @@ public class characterMovement : MonoBehaviour
             if (Input.GetAxisRaw("Horizontal") != 0 && canMoveForward)
             {
                 rb.velocity = new Vector2 (speed * currentSide, rb.velocity.y);
-                animator.SetBool(0, true);
+                animator.SetBool("Walking", true);
             }
             else
             {
                 rb.velocity = new Vector2(0, rb.velocity.y);
-                animator.SetBool(0, false);
+                animator.SetBool("Walking", false);
             }
         }
         else
@@ -100,8 +100,8 @@ public class characterMovement : MonoBehaviour
                 (col.bounds.extents.x *forwardRaycastMultiplier + col.offset.x ) * currentSide * transform.right
                 + transform.up*col.bounds.extents.y,
                 -transform.up * hit.distance, Color.red);
-            Debug.Log(hit.collider.gameObject.name);
-            Debug.Log(hit.distance);
+
+
 #endif
 
             if (hit.distance > col.bounds.size.y + raycastDownLeeway)
