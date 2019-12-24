@@ -60,7 +60,7 @@ public class characterMovement : MonoBehaviour, IFixedBaseMovement
         1 is left
         -1 right
          
-         */
+        */
         if (!Input.GetButton("Jump"))
         {
             if (Input.GetAxisRaw("Horizontal") * currentSide >= 0)
