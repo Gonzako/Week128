@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background Sky
+    uniqueID: 1874687557
+    locked: 0
+  - name: Background Mountains
+    uniqueID: 2056298839
+    locked: 0
+  - name: Background Green
+    uniqueID: 3654698225
+    locked: 0
+  - name: Character
+    uniqueID: 271545641
+    locked: 0
+  - name: Foreground Tiles
+    uniqueID: 64827247
+    locked: 0
