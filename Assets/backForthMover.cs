@@ -64,18 +64,20 @@ public class backForthMover : MonoBehaviour, IAITargetGiver
 
         if (currentWayPointIndex >= currentPath.vectorPath.Count)
         {
-            if(patrolIndex >= patrolPoints.Length)
+
+            patrolIndex++;
+            if (patrolIndex >= patrolPoints.Length)
             {
                 patrolIndex = 0;
                 desiredPoint = patrolPoints[0].position;
-                //currentWayPointIndex = 0;
+                currentWayPointIndex = 0;
                 calculatePath();
             }
             else 
             {
-                patrolIndex++;
                 desiredPoint = patrolPoints[patrolIndex].position;
-                //currentWayPointIndex = 0;
+                currentWayPointIndex = 0;
+                calculatePath();
             }
         }      
 
