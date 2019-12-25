@@ -63,9 +63,10 @@ public class AIMovment : MonoBehaviour, IFixedBaseMovement
         {
             targetGiver.onWayPoint();
         }
+        direction.y = direction.y / 2;
         direction = direction.normalized;
 
-       transform.position += (Vector3)(direction * speed * Time.fixedDeltaTime); 
+        rb.position += (direction * speed * Time.fixedDeltaTime); 
 
     }
     private void CheckGround()
