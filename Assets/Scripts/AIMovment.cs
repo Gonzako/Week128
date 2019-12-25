@@ -69,12 +69,13 @@ public class AIMovment : MonoBehaviour, IFixedBaseMovement
         if(targetGiver.DesiredPoint.x - transform.position.x > 0)
         {
             currentSide = 1;
-            characterRenderer.flipX = false;
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, 0);
+
         }
         else
         {
             currentSide = -1;
-            characterRenderer.flipX = true;
+            transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, 0);
         }
 
         rb.position += (direction * speed * Time.fixedDeltaTime); 

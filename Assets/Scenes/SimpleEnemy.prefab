@@ -89,7 +89,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   animator: {fileID: 0}
-  speed: 2
+  speed: 5
   maxFallDown: 3
   maxDistance: 5
   forwardRaycastMultiplier: 2
