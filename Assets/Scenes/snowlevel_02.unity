@@ -1187,45 +1187,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &844471457 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2243304588884759784, guid: 727085afec41baf439a6ae15e06be73d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1880746091}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &844471461 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2243304588884759783, guid: 727085afec41baf439a6ae15e06be73d,
     type: 3}
   m_PrefabInstance: {fileID: 1880746091}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &844471462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844471457}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowDebugText: 0
-  m_ShowCameraFrustum: 1
-  m_IgnoreTimeScale: 0
-  m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
-  m_DefaultBlend:
-    m_Style: 1
-    m_Time: 2
-  m_CustomBlends: {fileID: 0}
-  m_CameraCutEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_CameraActivatedEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &889119572
 GameObject:
   m_ObjectHideFlags: 0
@@ -1617,11 +1584,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: E1
       objectReference: {fileID: 0}
-    - target: {fileID: 2915678091715618346, guid: f6c65a5048782a744998bcefc233dd12,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 2915678091715618349, guid: f6c65a5048782a744998bcefc233dd12,
         type: 3}
       propertyPath: patrolPoints.Array.data[0]
@@ -1632,20 +1594,10 @@ PrefabInstance:
       propertyPath: patrolPoints.Array.data[1]
       value: 
       objectReference: {fileID: 347287921}
-    - target: {fileID: 2915678091715618515, guid: f6c65a5048782a744998bcefc233dd12,
+    - target: {fileID: 2915678091715618351, guid: f6c65a5048782a744998bcefc233dd12,
         type: 3}
-      propertyPath: m_FlipX
+      propertyPath: m_UsedByEffector
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2915678091715618515, guid: f6c65a5048782a744998bcefc233dd12,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1914165585
-      objectReference: {fileID: 0}
-    - target: {fileID: 2915678091715618515, guid: f6c65a5048782a744998bcefc233dd12,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6c65a5048782a744998bcefc233dd12, type: 3}
@@ -19185,46 +19137,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1870116787}
     m_Modifications:
-    - target: {fileID: 2243304588884759780, guid: 727085afec41baf439a6ae15e06be73d,
-        type: 3}
-      propertyPath: m_PixelSnapping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2243304588884759782, guid: 727085afec41baf439a6ae15e06be73d,
-        type: 3}
-      propertyPath: orthographic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2243304588884759782, guid: 727085afec41baf439a6ae15e06be73d,
-        type: 3}
-      propertyPath: field of view
-      value: 59
-      objectReference: {fileID: 0}
-    - target: {fileID: 2243304588884759782, guid: 727085afec41baf439a6ae15e06be73d,
-        type: 3}
-      propertyPath: near clip plane
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2243304588884759782, guid: 727085afec41baf439a6ae15e06be73d,
-        type: 3}
-      propertyPath: far clip plane
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 2243304588884759782, guid: 727085afec41baf439a6ae15e06be73d,
-        type: 3}
-      propertyPath: orthographic size
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2243304588884759782, guid: 727085afec41baf439a6ae15e06be73d,
-        type: 3}
-      propertyPath: m_projectionMatrixMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2243304588884759782, guid: 727085afec41baf439a6ae15e06be73d,
-        type: 3}
-      propertyPath: m_FocalLength
-      value: 49.9836
-      objectReference: {fileID: 0}
     - target: {fileID: 2243304588884759783, guid: 727085afec41baf439a6ae15e06be73d,
         type: 3}
       propertyPath: m_LocalPosition.x

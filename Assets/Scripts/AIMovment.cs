@@ -66,7 +66,7 @@ public class AIMovment : MonoBehaviour, IFixedBaseMovement
         direction.y = direction.y / 2;
         direction = direction.normalized;
 
-        if(direction.x > 0)
+        if(targetGiver.DesiredPoint.x - transform.position.x > 0)
         {
             currentSide = 1;
             characterRenderer.flipX = false;
