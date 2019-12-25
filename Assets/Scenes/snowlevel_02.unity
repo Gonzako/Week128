@@ -145,7 +145,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 149537364}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -37.41, y: -3.75, z: -10}
+  m_LocalPosition: {x: 36.88, y: -1.8600001, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1338137064}
@@ -431,7 +431,7 @@ GameObject:
   m_Component:
   - component: {fileID: 346739599}
   - component: {fileID: 346739598}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: characterspritesheetjump_0 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -474,7 +474,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 271545641
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1959726926227083014, guid: a5b5bd2edef4c704a9732f13fc640f2e,
     type: 3}
@@ -512,7 +512,7 @@ GameObject:
   m_Component:
   - component: {fileID: 347287921}
   - component: {fileID: 347287920}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: E1-P1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -555,7 +555,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 271545641
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1959726926227083014, guid: a5b5bd2edef4c704a9732f13fc640f2e,
     type: 3}
@@ -637,12 +637,12 @@ PrefabInstance:
     - target: {fileID: 2768092126996845761, guid: a58825d6cdbb54241a0c0f4b3cb00c34,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -37.41
+      value: 36.88
       objectReference: {fileID: 0}
     - target: {fileID: 2768092126996845761, guid: a58825d6cdbb54241a0c0f4b3cb00c34,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.85
+      value: -4.96
       objectReference: {fileID: 0}
     - target: {fileID: 2768092126996845761, guid: a58825d6cdbb54241a0c0f4b3cb00c34,
         type: 3}
@@ -706,7 +706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 510529301}
   - component: {fileID: 510529300}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: characterspritesheetjump_0 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -749,7 +749,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 271545641
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1959726926227083014, guid: a5b5bd2edef4c704a9732f13fc640f2e,
     type: 3}
@@ -787,7 +787,7 @@ GameObject:
   m_Component:
   - component: {fileID: 557159126}
   - component: {fileID: 557159125}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: characterspritesheetjump_0 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -830,7 +830,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 271545641
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1959726926227083014, guid: a5b5bd2edef4c704a9732f13fc640f2e,
     type: 3}
@@ -874,7 +874,7 @@ GameObject:
   m_Component:
   - component: {fileID: 637711314}
   - component: {fileID: 637711313}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: characterspritesheetjump_0 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -917,7 +917,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 271545641
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1959726926227083014, guid: a5b5bd2edef4c704a9732f13fc640f2e,
     type: 3}
@@ -955,7 +955,7 @@ GameObject:
   m_Component:
   - component: {fileID: 649493596}
   - component: {fileID: 649493595}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: characterspritesheetjump_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -998,7 +998,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 271545641
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1959726926227083014, guid: a5b5bd2edef4c704a9732f13fc640f2e,
     type: 3}
@@ -1236,7 +1236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 889119574}
   - component: {fileID: 889119573}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: characterspritesheetjump_0 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1279,7 +1279,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 271545641
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1959726926227083014, guid: a5b5bd2edef4c704a9732f13fc640f2e,
     type: 3}
@@ -1317,7 +1317,7 @@ GameObject:
   m_Component:
   - component: {fileID: 914811403}
   - component: {fileID: 914811402}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: characterspritesheetjump_0 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1360,7 +1360,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 271545641
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1959726926227083014, guid: a5b5bd2edef4c704a9732f13fc640f2e,
     type: 3}
@@ -1398,7 +1398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1080973604}
   - component: {fileID: 1080973603}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: characterspritesheetjump_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1441,7 +1441,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 271545641
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1959726926227083014, guid: a5b5bd2edef4c704a9732f13fc640f2e,
     type: 3}
@@ -1479,7 +1479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1086754889}
   - component: {fileID: 1086754888}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: characterspritesheetjump_0 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1522,7 +1522,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 271545641
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1959726926227083014, guid: a5b5bd2edef4c704a9732f13fc640f2e,
     type: 3}
@@ -1617,6 +1617,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: E1
       objectReference: {fileID: 0}
+    - target: {fileID: 2915678091715618346, guid: f6c65a5048782a744998bcefc233dd12,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2915678091715618349, guid: f6c65a5048782a744998bcefc233dd12,
         type: 3}
       propertyPath: patrolPoints.Array.data[0]
@@ -1627,6 +1632,21 @@ PrefabInstance:
       propertyPath: patrolPoints.Array.data[1]
       value: 
       objectReference: {fileID: 347287921}
+    - target: {fileID: 2915678091715618515, guid: f6c65a5048782a744998bcefc233dd12,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2915678091715618515, guid: f6c65a5048782a744998bcefc233dd12,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1914165585
+      objectReference: {fileID: 0}
+    - target: {fileID: 2915678091715618515, guid: f6c65a5048782a744998bcefc233dd12,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6c65a5048782a744998bcefc233dd12, type: 3}
 --- !u!4 &1202228329 stripped
@@ -1644,7 +1664,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1248533175}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: E1-P0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1734,7 +1754,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 64827247
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -18330,7 +18350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1274458546}
   - component: {fileID: 1274458545}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: characterspritesheetjump_0 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18373,7 +18393,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 271545641
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1959726926227083014, guid: a5b5bd2edef4c704a9732f13fc640f2e,
     type: 3}
@@ -18500,7 +18520,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1405118554}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: EnemyWaypoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18533,7 +18553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1599598620}
   - component: {fileID: 1599598619}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: characterspritesheetjump_0 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18576,7 +18596,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 271545641
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1959726926227083014, guid: a5b5bd2edef4c704a9732f13fc640f2e,
     type: 3}
@@ -18614,7 +18634,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1632820236}
   - component: {fileID: 1632820235}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: characterspritesheetjump_0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18657,7 +18677,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 271545641
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1959726926227083014, guid: a5b5bd2edef4c704a9732f13fc640f2e,
     type: 3}
@@ -18893,7 +18913,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1755468130}
   - component: {fileID: 1755468129}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: characterspritesheetjump_0 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18936,7 +18956,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 271545641
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1959726926227083014, guid: a5b5bd2edef4c704a9732f13fc640f2e,
     type: 3}
@@ -19055,7 +19075,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1835073544}
   - component: {fileID: 1835073543}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: characterspritesheetjump_0 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19098,7 +19118,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 271545641
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1959726926227083014, guid: a5b5bd2edef4c704a9732f13fc640f2e,
     type: 3}
@@ -19178,7 +19198,7 @@ PrefabInstance:
     - target: {fileID: 2243304588884759782, guid: 727085afec41baf439a6ae15e06be73d,
         type: 3}
       propertyPath: field of view
-      value: 40
+      value: 59
       objectReference: {fileID: 0}
     - target: {fileID: 2243304588884759782, guid: 727085afec41baf439a6ae15e06be73d,
         type: 3}
@@ -19208,17 +19228,17 @@ PrefabInstance:
     - target: {fileID: 2243304588884759783, guid: 727085afec41baf439a6ae15e06be73d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 36.88
       objectReference: {fileID: 0}
     - target: {fileID: 2243304588884759783, guid: 727085afec41baf439a6ae15e06be73d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.8600001
       objectReference: {fileID: 0}
     - target: {fileID: 2243304588884759783, guid: 727085afec41baf439a6ae15e06be73d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 2243304588884759783, guid: 727085afec41baf439a6ae15e06be73d,
         type: 3}
@@ -19276,7 +19296,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1984484612}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Moving enemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19344,7 +19364,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2047254634}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Enemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19392,7 +19412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2059098850}
   - component: {fileID: 2059098849}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: characterspritesheetjump_0 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19435,7 +19455,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 271545641
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1959726926227083014, guid: a5b5bd2edef4c704a9732f13fc640f2e,
     type: 3}

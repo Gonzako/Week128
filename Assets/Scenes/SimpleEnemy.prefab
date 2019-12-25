@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2915678091715618348}
   - component: {fileID: 2915678091715618515}
   - component: {fileID: 2915678091715618349}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SimpleEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,7 +157,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 271545641
+  m_SortingLayerID: 1914165585
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -4219623039684832208, guid: f1c5c92439183624986f76d5f210279f,

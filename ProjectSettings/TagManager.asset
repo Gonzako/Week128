@@ -15,7 +15,7 @@ TagManager:
   - 
   - Player
   - Obstacle
-  - 
+  - EnemyLayers
   - 
   - 
   - 
@@ -49,6 +49,9 @@ TagManager:
     locked: 0
   - name: Background Green
     uniqueID: 3654698225
+    locked: 0
+  - name: Enemies
+    uniqueID: 1914165585
     locked: 0
   - name: Character
     uniqueID: 271545641

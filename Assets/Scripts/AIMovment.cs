@@ -66,6 +66,17 @@ public class AIMovment : MonoBehaviour, IFixedBaseMovement
         direction.y = direction.y / 2;
         direction = direction.normalized;
 
+        if(direction.x > 0)
+        {
+            currentSide = 1;
+            characterRenderer.flipX = false;
+        }
+        else
+        {
+            currentSide = -1;
+            characterRenderer.flipX = true;
+        }
+
         rb.position += (direction * speed * Time.fixedDeltaTime); 
 
     }
