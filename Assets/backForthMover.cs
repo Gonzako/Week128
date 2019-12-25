@@ -66,17 +66,17 @@ public class backForthMover : MonoBehaviour, IAITargetGiver
         {
 
             patrolIndex++;
+            currentWayPointIndex = 0;
             if (patrolIndex >= patrolPoints.Length)
             {
                 patrolIndex = 0;
                 desiredPoint = patrolPoints[0].position;
-                currentWayPointIndex = 0;
+
                 calculatePath();
             }
             else 
             {
                 desiredPoint = patrolPoints[patrolIndex].position;
-                currentWayPointIndex = 0;
                 calculatePath();
             }
         }      
