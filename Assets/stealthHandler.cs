@@ -6,6 +6,9 @@
  */
 
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using Unity;
 using UnityEngine;
 
 
@@ -15,6 +18,8 @@ using UnityEngine;
 public class stealthHandler : MonoBehaviour
 {
     #region Public Fields
+    public bool Visible;
+    public float stealthTime = 0.3f;
     #endregion
 
     #region Private Fields
@@ -29,11 +34,19 @@ public class stealthHandler : MonoBehaviour
     private void camoStopHandle()
     {
         animator.SetBool("Stealthing", false);
+        StartCoroutine(turnVisibleAfterXTime());
     }
 
     private void camoStartHandle()
     {
+        Visible = false;
         animator.SetBool("Stealthing", true);
+    }
+
+    private IEnumerator turnVisibleAfterXTime()
+    {
+        yield return new WaitForSeconds(stealthTime);
+        Visible = true;
     }
     #endregion
 
