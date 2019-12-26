@@ -18,7 +18,7 @@ using UnityEngine;
 public class stealthHandler : MonoBehaviour
 {
     #region Public Fields
-    public bool Visible;
+    public bool Visible = true;
     public float stealthTime = 0.3f;
     #endregion
 

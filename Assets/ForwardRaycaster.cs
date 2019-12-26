@@ -35,12 +35,14 @@ public class ForwardRaycaster : MonoBehaviour
  
     void FixedUpdate()
     {
-        var hit = Physics2D.Raycast(transform.position, transform.localScale, maxDistance, playerLayers);
+        Debug.DrawLine(transform.position, new Vector2(transform.localScale.x, 0) * maxDistance + (Vector2)transform.position, Color.red);
+        var hit = Physics2D.Raycast(transform.position,new Vector2(transform.localScale.x, 0), maxDistance, playerLayers);
         if (hit)
         {
             if (hit.collider.GetComponent<stealthHandler>().Visible)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                var whats = SceneManager.GetActiveScene().name;
+                SceneManager.LoadScene(whats, LoadSceneMode.Single);
             }
         }
     }
